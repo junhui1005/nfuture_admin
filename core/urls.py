@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from django.http import HttpResponse
 
-urlpatterns = [
-    path('', views.dashboard, name='dashboard'),
-]
+def home(request):
+    return HttpResponse("Welcome to NFuture Admin Page!")
+
+urlpatterns = [path('', home),
