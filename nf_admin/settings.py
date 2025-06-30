@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 DEBUG = False
-ALLOWED_HOSTS = ['nfuture-admin.onrender.com']
+ALLOWED_HOSTS = ['www.nfuture.co.kr', 'nfuture-admin.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
